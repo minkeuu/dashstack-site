@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { SideBarItem } from "./SideBarItem";
-import logo from "../../assets/logo/logo.svg"
+import logo from "../../assets/logo/Logo.svg"
 export default function Sidebar() {
   const navClass = "w-[192px] py-3 rounded-[6px] text-white flex items-center justify-center font-medium transition-all";
   const firstSection = [
