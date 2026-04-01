@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "react-router-dom": "^7.9.6",
+    "uuid": "^13.0.0"
+  },
+  "devDependencies": {
+    "baseline-browser-mapping": "^2.9.14",
+    "vite-plugin-svgr": "^4.5.0"
+  }
+}

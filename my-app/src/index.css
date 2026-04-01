@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+  color: white;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+/* ===== Кастомный скроллбар ===== */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #2C3442; /* фон дорожки */
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #4A5568; /* цвет ползунка */
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #718096; /* hover */
+}
+
+.recharts-wrapper * {
+  outline: none !important;
+}
+
+
+/* ширина скроллбара */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* дорожка */
+::-webkit-scrollbar-track {
+  background: #1a1a1a; /* цвет фона */
+}
+
+/* бегунок */
+::-webkit-scrollbar-thumb {
+  background: #4a5568; /* цвет */
+  border-radius: 8px;
+}
+
+/* при наведении */
+::-webkit-scrollbar-thumb:hover {
+  background: #718096;
+}
