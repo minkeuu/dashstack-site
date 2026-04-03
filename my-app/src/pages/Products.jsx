@@ -1,6 +1,7 @@
 import { ProdCard } from "../components/product/ProdCard";
 import Rating from "../components/product/Rating";
-
+import ArrowRightBtn from "../assets/buttons/arrowRightBtn.svg";
+import ArrowLeftBtn from "../assets/buttons/arrowLeftBtn.svg";
 export default function Products() {
   return (
     <div className="h-full w-full">
@@ -12,7 +13,7 @@ export default function Products() {
         <div className="h-[340px] w-full bg-[#4880FF] rounded-[14px] border-[0.5px] border-gray-300/10 bg-[url('/images/background/Pattern.png')] flex items-center justify-between">
           <div className="h-full w-[100px] flex items-center justify-center">
             <div className="h-[41px] w-[41px] bg-[#F4F4F4]/[0.73] rounded-full flex items-center justify-center cursor-pointer">
-              <img src="./src/assets/buttons/arrowLeftBtn.svg" alt="" />
+              <img src={ArrowLeftBtn} alt="" />
             </div>
           </div>
           
@@ -40,7 +41,7 @@ export default function Products() {
 
           <div className="h-full w-[100px] flex items-center justify-center">
             <div className="h-[41px] w-[41px] bg-[#F4F4F4]/[0.73] rounded-full flex items-center justify-center cursor-pointer">
-              <img src="./src/assets/buttons/arrowRightBtn.svg" alt="" />
+              <img src={ArrowRightBtn} alt="" />
             </div>
           </div>
         </div>

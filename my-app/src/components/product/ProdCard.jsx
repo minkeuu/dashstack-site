@@ -1,9 +1,9 @@
 import Rating from "./Rating"
 import { useState, useEffect } from "react";
 import { useFavorites } from "../../context/FavoritesContext";
+import Favorite from "../../assets/buttons/favorite.svg";
+import FavActive from "../../assets/buttons/favorite-active.svg";
 export function ProdCard({ imageSrc, label, cost, id, rating, number}) {
-  const src = "./src/assets/buttons/favorite.svg";
-  const srcFav = "./src/assets/buttons/favorite-active.svg";
   const { favorites, toggleFavorite } = useFavorites();
   
   const isFavorite = favorites.some(f => f.id === id);
@@ -47,7 +47,7 @@ export function ProdCard({ imageSrc, label, cost, id, rating, number}) {
               </div>
 
               <div className="h-full w-[100px] flex justify-center py-6">
-                <img src={isFavorite ? srcFav : src} alt="" className="h-[44px] w-[44px] cursor-pointer" onClick={() => toggleFavorite({ id, imageSrc, label, cost, number, rating })}/>
+                <img src={isFavorite ? FavActive : Favorite} alt="" className="h-[44px] w-[44px] cursor-pointer" onClick={() => toggleFavorite({ id, imageSrc, label, cost, number, rating })}/>
               </div>
             </div>
           </div>
