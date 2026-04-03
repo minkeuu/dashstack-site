@@ -42,7 +42,7 @@ export default function Sidebar() {
 
       </div>
 
-      <div className="h-[450px] w-full flex justify-center items-center flex-col gap-1 border-b-[0.5px] border-gray-300/10 text-white">
+      <div className="h-[240px] w-full flex justify-center items-center flex-col gap-1 border-b-[0.5px] border-gray-300/10 text-white">
         <div className="h-[40px] w-[230px] items-end flex">
           <p className="font-nunito font-md text-[12px] text-gray-300">PAGES</p>
         </div>

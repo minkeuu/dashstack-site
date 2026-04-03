@@ -13,8 +13,8 @@ export default function Dashboard() {
   const menuRef = useRef(null);
   const menuRef1 = useRef(null);
   const { setMonth } = useContext(MonthContext);
-  const [dealStatus, setDealStatus] = useState("Delivered"); // default
-
+  const [dealStatus, setDealStatus] = useState("delivered"); // default
+  const options = ["Delivered", "Pending", "Rejected"]
   const deals = [
   {
     icon: AppleWatch,
@@ -113,8 +113,8 @@ export default function Dashboard() {
           <div className="h-[60px] w-full flex items-center flex justify-between">
             <h1 className="font-nunito text-[24px] font-bold text-white">Deals Details</h1>
             <CustomSelect
-              options={["Delivered", "Pending", "Rejected"]}
-              defaultValue="Delivered"
+              options={options}
+              defaultValue={options[0]}
               onChange={(value) => setDealStatus(value.toLowerCase())}
             />
           </div>
