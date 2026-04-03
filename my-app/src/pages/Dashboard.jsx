@@ -5,6 +5,10 @@ import SalesChart from "../components/graphs/SalesChart";
 import DealsCard from "../components/dashboard/DealsCard";
 import { MonthContext } from "../components/graphs/SelectedMonth";
 import AppleWatch from "../assets/icons/appleWatch.svg";
+import TotalUser from "../assets/icons/members.svg";
+import TotalOrder from "../assets/icons/orders.svg";
+import TotalSales from "../assets/icons/sales.svg";
+import TotalPending from "../assets/icons/pending.svg";
 export default function Dashboard() {
   const menuRef = useRef(null);
   const menuRef1 = useRef(null);
@@ -54,7 +58,7 @@ export default function Dashboard() {
         <StatsCard 
           title="Total User"
           value="40,689"
-          icon="./src/assets/icons/members.svg"
+          icon={TotalUser}
           percent="8.5%"
           percentColor="#00B69B" 
           trend="up"
@@ -64,7 +68,7 @@ export default function Dashboard() {
         <StatsCard 
           title="Total Order"
           value="10,293"
-          icon="./src/assets/icons/orders.svg"
+          icon={TotalOrder}
           percent="1.3%"
           percentColor="#00B69B"
           trend="up"
@@ -74,7 +78,7 @@ export default function Dashboard() {
         <StatsCard 
           title="Total Sales"
           value="$89,000"
-          icon="./src/assets/icons/sales.svg"
+          icon={TotalSales}
           percent="4.3%"
           percentColor="#F93C65"
           trend="down"
@@ -84,7 +88,7 @@ export default function Dashboard() {
        <StatsCard 
           title="Total Pending"
           value="2040"
-          icon="./src/assets/icons/pending.svg"
+          icon={TotalPending}
           percent="1.8%"
           trend="up"
           percentColor="#00B69B"
