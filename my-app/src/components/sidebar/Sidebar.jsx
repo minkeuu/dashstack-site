@@ -14,13 +14,9 @@ export default function Sidebar() {
 
   const secondSection = [
     { to: "/pricing", label: "Pricing" },
-    { to: "/calendar", label: "Calendar" },
     { to: "/toDo", label: "To-Do" },
     { to: "/contact", label: "Contact" },
-    { to: "/invoice", label: "Invoice" },
-    { to: "/uiElements", label: "UI Elements" },
     { to: "/team", label: "Team" },
-    { to: "/table", label: "Table" },
   ];
 
   const thirdSection = [
