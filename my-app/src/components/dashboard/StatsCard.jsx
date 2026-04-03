@@ -1,8 +1,9 @@
 import React from "react";
-
+import UpCard from "../../assets/ui/up.svg";
+import DownCard from "../../assets/ui/down.svg";
 export default function StatsCard({ title, value, icon, percent, trend, subtitle }) {
   // Выбираем картинку динамически
-  const trendIcon = trend === "up" ? "./src/assets/ui/up.svg" : "./src/assets/ui/down.svg";
+  const trendIcon = trend === "up" ? UpCard : DownCard;
   const trendColor = trend === "up" ? "#00B69B" : "#FF4D4F"; // зелёный / красный
 
   return (
