@@ -4,6 +4,7 @@ import CustomSelect from "../components/selectors/Selector";
 import SalesChart from "../components/graphs/SalesChart";
 import DealsCard from "../components/dashboard/DealsCard";
 import { MonthContext } from "../components/graphs/SelectedMonth";
+import AppleWatch from "../src/assets/icons/appleWatch.svg";
 export default function Dashboard() {
   const menuRef = useRef(null);
   const menuRef1 = useRef(null);
@@ -12,7 +13,7 @@ export default function Dashboard() {
 
   const deals = [
   {
-    icon: "./src/assets/icons/appleWatch.svg",
+    icon: AppleWatch,
     prodName: "Apple Watch",
     loc: "6096 Marjolaine Landing",
     dateTime: "12.09.2019 - 12.53 PM",
@@ -21,7 +22,7 @@ export default function Dashboard() {
     status: "delivered",
   },
   {
-    icon: "./src/assets/icons/appleWatch.svg",
+    icon: AppleWatch,
     prodName: "Apple Watch",
     loc: "6096 Marjolaine Landing",
     dateTime: "12.09.2019 - 12.53 PM",
@@ -30,7 +31,7 @@ export default function Dashboard() {
     status: "pending",
   },
   {
-    icon: "./src/assets/icons/appleWatch.svg",
+    icon: AppleWatch,
     prodName: "Apple Watch",
     loc: "6096 Marjolaine Landing",
     dateTime: "12.09.2019 - 12.53 PM",
