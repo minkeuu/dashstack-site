@@ -4,7 +4,7 @@ import CustomSelect from "../components/selectors/Selector";
 import SalesChart from "../components/graphs/SalesChart";
 import DealsCard from "../components/dashboard/DealsCard";
 import { MonthContext } from "../components/graphs/SelectedMonth";
-import AppleWatch from "../src/assets/icons/appleWatch.svg";
+import AppleWatch from "./src/assets/icons/appleWatch.svg";
 export default function Dashboard() {
   const menuRef = useRef(null);
   const menuRef1 = useRef(null);
